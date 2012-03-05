@@ -1,0 +1,70 @@
+<html>
+<head>	
+	<title>Slides.js</title>
+	<style>
+		html, body, dl, dd{
+			margin: 0;
+			padding: 0;
+		}
+
+		
+		
+		/* SLIDES JS */
+		.slidejs .viewport{
+			width: 300px;
+			height: 200px;
+			overflow: hidden;
+		}
+		.slidejs .images{
+			height: 200px;
+		}
+		.slidejs .images dd, #slideshow .navigation dd{
+			float: left;
+		}
+		.slidejs .navigation{
+			display: none;
+		}
+		.slidejs .navigation dd{
+			padding: 10px;	 
+			background: black;
+			margin-right: 1px; 
+			display: block;
+		}
+		.slidejs .navigation .active{ 
+			background: gray;
+		}
+		.slidejs .clean{
+			clear: both;
+		}
+		
+	</style>
+</head>
+<body>
+
+
+<div id="slideshow" class="slidejs">
+	<div class="viewport">
+		<dl class="images">
+		    <dd><img src="img/01.jpg"></dd>
+		    <dd><img src="img/02.jpg"></dd>
+		    <dd><img src="img/03.jpg"></dd>                         
+		    <dd><img src="img/04.jpg"></dd>                         
+		</dl>
+	</div>
+	<div class="clean"></div>
+	<dl class="navigation">
+		<dd class="active"><a href="#">01</a></dd>
+		<dd><a href="#">02</a></dd>
+		<dd><a href="#">03</a></dd>
+		<dd><a href="#">04</a></dd>
+	</dl>
+</div>
+
+<script src="./jquery.min.js"></script>
+<script src="./jquery.slide.js"></script>
+<script>
+	//calls the slideshow plugin
+	$("#slideshow").slidejs();
+</script>
+</body>
+</html>
