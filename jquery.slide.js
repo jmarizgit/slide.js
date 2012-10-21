@@ -2,6 +2,7 @@
 SlideJS
 ---------
 author: 	Mariz Melo (MM) 2012
+website:	http://www.emoriz.com
 */
 (function($){
 	
@@ -12,14 +13,14 @@ author: 	Mariz Melo (MM) 2012
 		
 		//configuration variable
 		var $config = {
-			size : $($element+" .images").children("dd").length-1,
-			width : $($element+" .viewport").width(),
 			controls : 1,	//show or hide controls
 			interval : "3",	//number of seconds before go to next slide
 			speed : "400",	//speed of transitions
 			slide : 1,	//start from this slide
 			pauseoverimage : 1,	//pause when mouse is over slide images
-			pauseovernavigation : 1	//pause when mouse is over navigation buttons (after click on them)
+			pauseovernavigation : 1,	//pause when mouse is over navigation buttons (after click on them)
+			size : $($element+" .images").children("dd").length-1,
+			width : $($element+" .viewport").width()
 		};
 		
 		//show menu
