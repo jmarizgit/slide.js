@@ -12,3 +12,11 @@ Just replace images and numbers (on navigation) and
 you are ready to go.
 
 Enjoy...
+
+##TODO LIST
+
+    1. Transition effects
+    2. No slide backwords at the end
+    3. Themes
+
+
